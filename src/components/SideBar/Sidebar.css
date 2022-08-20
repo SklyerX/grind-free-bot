@@ -1,0 +1,48 @@
+.sidebar {
+  background-color: var(--sidebar-color);
+  width: 6rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top {
+  padding-top: 5rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+.bottom {
+  padding-bottom: 3rem;
+}
+
+.icon {
+  background-color: var(--icon-color);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.icon a {
+  color: #fff;
+}
+
+.selected {
+  background-color: var(--selected-bg);
+}
+
+.leave-or-not {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

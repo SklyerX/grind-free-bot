@@ -1,0 +1,42 @@
+.support-box {
+    width: 70rem;
+    height: 86vh;
+    background-color: var(--options-background);
+    position: absolute;
+    top: 11%;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+
+.headline {
+    padding-left: 2rem;
+}
+
+.headline h1 {
+    color: #fff;
+}
+
+.headline p {
+    color: rgb(221, 221, 221);
+}
+
+.support-developer {
+    background-color: var(--sidebar-color);
+    width: 65rem;
+    height: 8rem;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.support-developer h3 {
+    color: #fff;
+}
+
+.support-developer p {
+    color: rgb(222, 222, 222);
+}
+
+.support-developer a {
+    color: cyan;
+    text-decoration: none;
+}

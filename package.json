@@ -1,0 +1,93 @@
+{
+  "name": "gfb",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "author": "SkylerX",
+  "main": "./public/electron.js",
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "@emotion/react": "^11.10.0",
+    "@mantine/core": "^5.1.6",
+    "@mantine/hooks": "^5.1.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "concurrently": "^7.3.0",
+    "electron-is-dev": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.8",
+    "wait-on": "^6.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "electron": "^20.0.3",
+    "electron-builder": "^21.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-pack": "build --em.main=build/electron.js",
+    "electron:build": "yarn build && electron-builder -c.extraMetadata.main-build/main.js",
+    "electron:serve": "concurrently \"npm start\" \"wait-on http://localhost:3000 && npm run electron\"",
+    "electron:package:mac": "yarn build && electron-builder -m -c.extraMetadata.main=build/electron.js",
+    "electron:package:win": "yarn build && electron-builder -w -c.extraMetadata.main=build/electron.js",
+    "electron:package:linux": "yarn build && electron-builder -l -c.extraMetadata.main=build/electron.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "appId": "com.netlify.grindfreebot",
+    "productName": "Grind Free bot",
+    "icon": "Logo.ico",
+    "extends": null,
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "mac": {
+      "target": "pkg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "deb"
+    },
+    "nsis": {
+      "oneClick": true,
+      "uninstallDisplayName": "grindfreebot-uninstaller",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": false
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.login img {
+  width: 10rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+
+.bottom-content h1 {
+  color: #fff;
+  margin-left: 3rem;
+}
+
+.bottom-content p {
+  color: #fff;
+  margin-left: 3.1rem;
+}
+
+.box {
+  background-color: #1a1a1a;
+  display: grid;
+  place-content: center;
+  width: 20rem;
+  height: 18.3rem;
+  margin-top: 10rem;
+  margin-left: 8rem;
+  border-radius: 0.5rem;
+}
+
+.box h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.top-half {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-half input {
+  width: 17rem;
+  border: none;
+  background-color: #212121;
+  height: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.top-half input:focus {
+  outline: none;
+}
+
+.top-half button {
+  height: 2rem;
+  border-radius: 0.3rem;
+  color: #000;
+  background-color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-out;
+  border: none;
+}
+
+.top-half button:hover {
+  transform: scale(1.05);
+}
+
+.top-half button:active {
+  transform: scale(0.9);
+}
+
+.bottom-half {
+  text-align: center;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.3rem;
+}
+
+.social a {
+  color: #000;
+  background-color: #d9d9d9;
+  padding: 0.4rem;
+  border-radius: 70%;
+  text-align: center;
+}
+
+#cta {
+  color: #fff;
+}

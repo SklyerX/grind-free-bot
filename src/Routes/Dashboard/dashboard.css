@@ -1,0 +1,271 @@
+.sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: start;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.dropzone {
+  width: 30rem;
+  height: 15rem;
+  border: 2px dotted var(--dropzone-border);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.dropzone h1 {
+  color: gray;
+  margin-top: 6rem;
+  user-select: none;
+}
+
+.options {
+  background-color: var(--options-background);
+  width: 30rem;
+  height: 39rem;
+  border-radius: 0.5rem;
+  margin-left: 10rem;
+}
+
+/* SLIDER */
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+.option input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+.option input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* general styling */
+/* SLIDER */
+
+.right-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+}
+
+.option h1 {
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.option input:not([type="checkbox"]) {
+  width: 25rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  background-color: var(--options-background);
+  border: 2px solid gray;
+  border-radius: 0.3rem;
+  color: #fff;
+}
+
+.option input:not([type="checkbox"]):focus {
+  outline: none;
+}
+
+.option h1 {
+  margin-left: 1.5rem;
+}
+.option a {
+  margin-left: 2rem;
+  color: cyan;
+  text-decoration: none;
+}
+
+.nickname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+
+.nickname h1 {
+  color: var(--nickname-color);
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transform: translateY(-22rem);
+}
+
+.logs {
+  width: 30rem;
+  height: 15rem;
+  border: 2px solid gray;
+  position: fixed;
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.logs::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.logs::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.btns {
+  transform: translateY(17rem);
+}
+
+#start:enabled {
+  background-color: var(--start-bg);
+  color: var(--start-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: tranform 0.3s ease-in-out;
+}
+
+#start:enabled:hover {
+  transform: scale(1.05);
+}
+
+#start:enabled:active {
+  transform: scale(0.9);
+}
+
+#pause:enabled {
+  background-color: rgb(217, 186, 9);
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: tranform 0.3s ease-in-out;
+}
+
+#pause:enabled:hover {
+  transform: scale(1.05);
+}
+
+#pause:enabled:active {
+  transform: scale(0.9);
+}
+
+#stop:enabled {
+  background-color: rgb(217, 40, 9);
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: tranform 0.3s ease-in-out;
+}
+
+#stop:enabled:hover {
+  transform: scale(1.05);
+}
+
+#stop:enabled:active {
+  transform: scale(0.9);
+}
+
+#start:disabled,
+#pause:disabled,
+#stop:disabled {
+  background-color: #242424;
+  color: #343434;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-right: 1rem;
+  cursor: not-allowed;
+}
+
+.delay {
+  display: flex;
+  flex-direction: row;
+}
+
+#delay {
+  width: 5rem;
+  height: 2rem;
+  transform: translateY(1rem);
+  margin-left: 16rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="../Logo.ico" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Grind Free Bot</title>
+    <style>
+      :root {
+        --navbar-color: #1b1b1b;
+        --sidebar-color: #1b1b1b;
+        --background-dark: #1f1f1f;
+        --icon-color: #282827;
+        --selected-color: #484848;
+        --card-color: #1b1b1b;
+      }
+    </style>
+  </head>
+  <body style="background-color: #1f1f1f">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script
+      src="https://kit.fontawesome.com/7dddb7da43.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      setInterval(()=>{
+        if(!window.location.href.includes("/login")) {
+          const getTheme = window.localStorage.getItem("theme");
+          if(getTheme === "dark") {
+            document.body.style.backgroundColor = '#1f1f1f';
+            document.documentElement.style.setProperty('--sidebar-color', '#1b1b1b');
+            document.documentElement.style.setProperty('--navbar-color', '#1b1b1b');
+            document.documentElement.style.setProperty('--icon-color', '#282827');
+            document.documentElement.style.setProperty('--selected-bg', '#484848');
+            // DASHBOARD
+            document.documentElement.style.setProperty('--options-background', '#161616');
+            document.documentElement.style.setProperty('--dropzone-border', '#808080');
+            document.documentElement.style.setProperty('--start-bg', '#fff');
+            document.documentElement.style.setProperty('--start-color', '#000');
+            document.documentElement.style.setProperty('--nickname-color', '#fff');
+            // DASHBOARD
+            // SETTINGS
+            
+            // SETTINGS
+          } else if(getTheme === "light") {
+            document.body.style.backgroundColor = '#fff';
+            document.documentElement.style.setProperty('--sidebar-color', '#ededed');
+            document.documentElement.style.setProperty('--navbar-color', '#ededed');
+            document.documentElement.style.setProperty('--icon-color', '#b6b6b6');
+            document.documentElement.style.setProperty('--selected-bg', '#898989');
+            // DASHBOARD
+            document.documentElement.style.setProperty('--options-background', '#a2a2a2');
+            document.documentElement.style.setProperty('--dropzone-border', '#303030');
+            document.documentElement.style.setProperty('--start-bg', '#1b1b1b');
+            document.documentElement.style.setProperty('--start-color', '#fff');
+            document.documentElement.style.setProperty('--nickname-color', '#000');
+            // DASHBOARD
+            // SETTINGS
+
+            // SETTINGS
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

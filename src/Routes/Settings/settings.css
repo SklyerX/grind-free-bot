@@ -1,0 +1,131 @@
+.settings-box {
+    width: 70rem;
+    height: 86vh;
+    background-color: var(--options-background);
+    position: absolute;
+    top: 11%;
+    border-radius: 1rem;
+}
+
+#heading {
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.settings-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+}
+
+.settings-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.settings-left h1 {
+    width: 30rem;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+
+.settings-left p {
+    width: 25rem;
+    color: rgb(212, 212, 212);
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.settings-left a {
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    margin-left: 2rem;
+    transition: background .3s ease-out;
+}
+
+.settings-left a:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.settings-right h1 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.light img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.dark img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.settings-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+}
+
+.auth-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.auth-step h1 {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 3rem;
+}
+
+.desc-switch p {
+    width: 25rem;
+    color: #fff;
+    margin-left: 3rem;
+}
+
+.desc-switch {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.section-identifier {
+    color: rgb(87, 196, 19);
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    margin-top: 6rem;
+}
+
+.desc-switch input {
+    margin-top: 1.3rem;
+}
+
+.desc-switch a {
+    color: cyan;
+    margin-left: .3rem;
+}

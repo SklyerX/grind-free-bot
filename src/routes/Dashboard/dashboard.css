@@ -1,0 +1,64 @@
+.dashboard {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyBox {
+    width: 30rem;
+    height: 10rem;
+    background-color: #2A2E35;
+    margin-top: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.keyBox h1 {
+    color: #fff;
+}
+
+.keyBox p {
+    color: gray;
+}
+
+.copy {
+    background-color: #1f2225;
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .4rem;
+}
+
+.key {
+    padding-left: 1rem;
+}
+
+.icon {
+    padding-right: 1rem;
+}
+
+.icon p {
+    color: #fff;
+}
+
+.key p {
+    color: rgb(194, 194, 194);
+}
+
+@media screen and (max-width: 530px) {
+    .keyBox {
+        width: 20rem;
+        height: 13rem;
+    }
+    .copy {
+        width: 20rem;
+    }
+}
+
+
+

@@ -1,0 +1,100 @@
+.home {
+  margin-top: 15rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro img {
+  width: 15rem;
+}
+
+.intro h1 {
+  color: #fff;
+}
+
+.intro p {
+  width: 34rem;
+  color: rgb(218, 218, 218);
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+.download h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.download-cards {
+  margin-top: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+.download-card {
+  background: #d9d9d9;
+  border-radius: 1rem;
+  width: 10rem;
+  height: 10rem;
+  transition: all .2s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-card:hover {
+  box-shadow: 0px 4px 15px 11px rgba(157, 157, 157, 0.25);
+  transform: scale(1.05);
+}
+
+.download-card a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.image img {
+  width: 30rem;
+}
+
+
+@media screen and (max-width: 770px) {
+  .intro h1 {
+    font-size: 1.3rem;
+  }
+  .intro p {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro h1 {
+    font-size: 1rem;
+  }
+  .intro p {
+    font-size: .9rem;
+    width: 20rem;
+  }
+  .download h1 {
+    font-size: 1rem;
+  }
+  .image img {
+    width: 20rem;
+  }
+}

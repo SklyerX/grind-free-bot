@@ -1,0 +1,66 @@
+.login {
+    margin-top: 20rem;
+    display: grid;
+    place-items: center;
+}
+
+.login-box {
+    background-color: #2A2E35;
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.login-section:first-child {
+    margin-bottom: 1rem;
+}
+
+.password {
+    margin-bottom: 1rem;
+}
+
+.login a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.login-cta {
+    margin-top: 2rem;
+}
+
+.login-cta button {
+    width: 30rem;
+    height: 3rem;
+    border: none;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #4d59D6;
+    transition: background .3s ease-in;
+}
+
+.login button:hover {
+    cursor: pointer;
+    background-color: #3d48c2;
+}
+
+.login button:active {
+    cursor: pointer;
+    transform: translateY(.2rem);
+}
+
+.login p {
+    color: #fff;
+}
+
+@media screen and (max-width: 585px) {
+    .login-box {
+        width: 20rem;
+    }
+    .login-cta button {
+        width: 20rem;
+    }
+}

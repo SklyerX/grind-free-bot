@@ -1,0 +1,81 @@
+.signup {
+  margin-top: 15rem;
+  display: grid;
+  place-items: center;
+}
+
+.signup-box {
+  background-color: #2a2e35;
+  width: 30rem;
+  border-radius: 1rem;
+  height: 35rem;
+}
+
+.signup-sections {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.signup-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem;
+}
+
+.signup-cta button {
+  width: 27.4rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #4d59d6;
+  transition: background 0.3s ease-in;
+}
+
+.signup-cta button:hover {
+  cursor: pointer;
+  background-color: #3d48c2;
+}
+
+.signup-cta button:active {
+  cursor: pointer;
+  transform: translateY(0.2rem);
+}
+
+.signup-cta a {
+  color: cyan;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.signup-box p {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+}
+
+.signup-box a {
+  color: cyan;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 510px) {
+  .signup-box {
+    width: 20rem;
+  }
+  .signup-cta button {
+    width: 17.3rem;
+  }
+  .signup-box p {
+    width: 15rem;
+    font-size: 0.7rem;
+    margin-left: 1.3rem;
+  }
+}

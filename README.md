@@ -17,7 +17,7 @@
 ## About The Project
 
 <div align="center">
-<img src="https://media.discordapp.net/attachments/974442366469554176/1010647906623160390/Dashboard.png?width=1231&height=676" width="580">
+<img src="https://media.discordapp.net/attachments/974442366469554176/1010651675079479426/unknown.png" width="580">
 </div>
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
